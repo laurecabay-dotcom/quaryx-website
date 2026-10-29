@@ -6,188 +6,1087 @@
 
   <title>QUARYX — Infrastructure, Data &amp; AI</title>
   <meta name="description"
-        content="A strategic industrial redevelopment opportunity in Wallonia, Belgium.">
+        content="An industrial redevelopment opportunity in Wallonia, Belgium, for next-generation Data & AI infrastructure.">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
+<main>
 
-      <header class="header">
-        <a class="brand" href="./" aria-label="QUARYX home">
-          <img
-            src="images/quaryx-logo.png"
-            alt="QUARYX — Where Industrial Heritage Powers a Greener Digital Future."
-          >
-        </a>
+  <!-- ACCUEIL -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
 
-        <nav aria-label="Project pillars">
-          <a href="#connectivity">Connectivity</a>
-          <a href="#durability">Durability</a>
-          <a href="#opportunity">Opportunity</a>
-        </nav>
-      </header>
+    <header class="header">
+      <a class="brand" href="#home" aria-label="QUARYX home">
+        <img src="images/quaryx-logo.png"
+             alt="QUARYX — Where Industrial Heritage Powers a Greener Digital Future.">
+      </a>
 
-      <div class="hero-content">
-        <h1 id="hero-title">
-          <span>Infrastructure</span>
-          <span class="blue">Data &amp; AI</span>
-          <span class="gradient">Next-gen</span>
-        </h1>
+      <nav aria-label="Main navigation">
+        <a href="#project">The Project</a>
+        <a href="#data-ai">Data &amp; AI</a>
+        <a href="#energy">Energy</a>
+        <a href="#water-heat">Water &amp; Heat</a>
+        <a href="#strategic-land">Land &amp; Phasing</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-        <svg
-          class="circuit"
-          viewBox="0 0 440 28"
-          fill="none"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient id="line-color">
-              <stop stop-color="#071d49"/>
-              <stop offset=".6" stop-color="#087487"/>
-              <stop offset="1" stop-color="#729e31"/>
-            </linearGradient>
-          </defs>
+    <div class="hero-content">
+      <h1 id="hero-title">
+        <span>Infrastructure</span>
+        <span class="blue">Data &amp; AI</span>
+        <span class="gradient">Next-gen</span>
+      </h1>
 
-          <path
-            d="M2 12H180L190 22H230M180 12H225L235 7H435"
-            stroke="url(#line-color)"
-            stroke-width="2.5"
-          />
+      <svg class="circuit" viewBox="0 0 440 28"
+           fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="circuit-color">
+            <stop stop-color="#071b49"/>
+            <stop offset=".6" stop-color="#087487"/>
+            <stop offset="1" stop-color="#729e31"/>
+          </linearGradient>
+        </defs>
+        <path d="M2 12H180L190 22H230M180 12H225L235 7H435"
+              stroke="url(#circuit-color)" stroke-width="2.5"/>
+        <g fill="#078368">
+          <circle cx="230" cy="22" r="3.5"/>
+          <circle cx="290" cy="7" r="3.5"/>
+          <circle cx="390" cy="7" r="3.5"/>
+        </g>
+      </svg>
 
-          <g fill="#078368">
-            <circle cx="230" cy="22" r="3.5"/>
-            <circle cx="290" cy="7" r="3.5"/>
-            <circle cx="390" cy="7" r="3.5"/>
-          </g>
-        </svg>
-
-        <p class="intro">
-          <span class="intro-description">
-            Strategic redevelopment of an industrial site
-          </span>
-          <span class="intro-area">
-            of <strong>±100,000 m²</strong>
-          </span>
+      <div class="intro">
+        <p class="intro-description">
+          Strategic redevelopment of an industrial site
         </p>
 
-        <div class="location">
-          <span class="location-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path
-                d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"
-              />
-              <circle cx="12" cy="10" r="2.5"/>
-            </svg>
-          </span>
+        <div class="intro-area">
+          <span>of <strong>±100,000 m²</strong></span>
 
-          <div>
-            <strong>Wallonia, Belgium</strong>
-            <span>France / Benelux border region</span>
-          </div>
+          <svg class="area-leaf" viewBox="0 0 64 44"
+               aria-hidden="true">
+            <defs>
+              <linearGradient id="leaf-color">
+                <stop stop-color="#00884b"/>
+                <stop offset="1" stop-color="#91b62c"/>
+              </linearGradient>
+            </defs>
+            <path d="M10 30C3 10 25 5 56 5C52 29 36 43 17 33Z"
+                  fill="url(#leaf-color)"/>
+            <path d="M15 31C25 26 35 23 45 14M23 28l-1-10M31 23l10 1"
+                  fill="none" stroke="white" stroke-width="1.7"
+                  stroke-linecap="round"/>
+            <path d="M4 40Q10 34 17 30" fill="none"
+                  stroke="#805333" stroke-width="2.5"
+                  stroke-linecap="round"/>
+          </svg>
         </div>
       </div>
 
-      <div class="pillars">
-
-  <!-- Énergie : éclair -->
-  <article id="connectivity">
-    <svg class="pillar-icon"
-         viewBox="0 0 80 80"
-         aria-hidden="true">
-      <path d="M48 4 15 43h22L25 76 64 35H42Z"/>
-    </svg>
-
-    <div>
-      <h2>Energy potential</h2>
-      <p>A platform suited to tomorrow’s infrastructure</p>
+      <div class="location">
+        <span class="location-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Wallonia, Belgium</strong>
+          <span>France / Benelux border region</span>
+        </div>
+      </div>
     </div>
-  </article>
 
-  <!-- Reconversion : feuille -->
-  <article id="opportunity">
-    <svg class="pillar-icon"
-         viewBox="0 0 80 80"
-         aria-hidden="true">
-      <path d="
-        M22 62
-        C5 49 12 25 31 16
-        C43 10 58 9 69 8
-        C64 20 68 39 57 54
-        C49 66 34 69 22 62Z
-      "/>
-      <path d="
-        M10 75 56 23
-        M27 56 25 38
-        M36 46 53 46
-        M43 38 43 24
-        M21 63 39 63
-      "/>
-    </svg>
+    <div class="pillars">
+      <article>
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <path d="M48 4 15 43h22L25 76 64 35H42Z"/>
+        </svg>
+        <div>
+          <h2>Energy potential</h2>
+          <p>A platform suited to tomorrow’s infrastructure</p>
+        </div>
+      </article>
 
-    <div>
-      <h2>Strategic industrial redevelopment opportunity</h2>
-      <p class="uppercase">In a border region</p>
+      <article>
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <path d="M22 62C5 49 12 25 31 16C43 10 58 9 69 8
+                   C64 20 68 39 57 54C49 66 34 69 22 62Z"/>
+          <path d="M10 75 56 23M27 56 25 38M36 46h17M43 38V24"/>
+        </svg>
+        <div>
+          <h2>Strategic industrial redevelopment opportunity</h2>
+          <p>IN A BORDER REGION</p>
+        </div>
+      </article>
+
+      <article>
+        <svg class="ai-symbol" viewBox="0 0 80 80"
+             aria-hidden="true">
+          <circle cx="40" cy="40" r="34"/>
+          <rect x="24" y="25" width="32" height="30" rx="3"/>
+          <path d="M30 47 36 33 42 47M32 42h8M48 33v14
+                   M30 25V12M48 25V9M56 34h14M56 47h12
+                   M31 55v15M47 55v13M24 34H10M24 47H9"/>
+          <g stroke="#eee327">
+            <circle cx="30" cy="10" r="3"/>
+            <circle cx="48" cy="7" r="3"/>
+            <circle cx="72" cy="34" r="3"/>
+            <circle cx="70" cy="47" r="3"/>
+            <circle cx="31" cy="72" r="3"/>
+            <circle cx="47" cy="70" r="3"/>
+            <circle cx="8" cy="34" r="3"/>
+            <circle cx="7" cy="47" r="3"/>
+          </g>
+        </svg>
+        <div>
+          <h2>Data &amp; AI infrastructure</h2>
+          <p>FOR TOMORROW</p>
+        </div>
+      </article>
     </div>
-  </article>
 
-  <!-- Data et IA : circuit -->
-  <article id="durability">
-    <svg class="pillar-icon pillar-icon-ai"
-         viewBox="0 0 80 80"
-         aria-hidden="true">
+    <p class="image-note">Conceptual illustration</p>
+  </section>
 
-      <defs>
-        <linearGradient id="ai-icon-color"
-                        x1="0" y1="1" x2="1" y2="0">
-          <stop stop-color="#19bddd"/>
-          <stop offset=".5" stop-color="#19bddd"/>
-          <stop offset="1" stop-color="#eee327"/>
-        </linearGradient>
-      </defs>
 
-      <g stroke="url(#ai-icon-color)">
-        <circle cx="40" cy="40" r="34"/>
+  <!-- THE PROJECT -->
+  <section id="project" class="project-section"
+           aria-labelledby="project-title">
 
-        <rect x="25" y="26"
-              width="30" height="28" rx="2"/>
+    <div class="project-layout">
+      <div class="project-summary">
+        <p class="eyebrow">01 / The Project</p>
 
-        <path d="
-          M30 47 36 33 42 47
-          M32 42h8
-          M48 33v14
-          M32 26V16H24
-          M47 26V12
-          M55 34h9V24
-          M55 46h12
-          M47 54v11h9
-          M33 54v15
-          M25 46H13
-          M25 34H15V25
-        "/>
+        <h2 id="project-title">
+          An industrial legacy.<br>
+          <span>A digital future.</span>
+        </h2>
 
-        <circle cx="22" cy="16" r="2.8"/>
-        <circle cx="47" cy="10" r="2.8"/>
-        <circle cx="64" cy="22" r="2.8"/>
-        <circle cx="69" cy="46" r="2.8"/>
-        <circle cx="58" cy="65" r="2.8"/>
-        <circle cx="33" cy="71" r="2.8"/>
-        <circle cx="11" cy="46" r="2.8"/>
-        <circle cx="15" cy="23" r="2.8"/>
-      </g>
-    </svg>
+        <p class="project-description">
+          Transforming an industrial site in Wallonia into a platform
+          for next-generation Data &amp; AI infrastructure.
+        </p>
 
-    <div>
-      <h2>Data &amp; AI infrastructure</h2>
-      <p class="uppercase">For tomorrow</p>
+        <div class="project-figure">
+          <strong>±100,000 <span>m²</span></strong>
+          <p>Industrial land available and secured</p>
+        </div>
+
+        <!-- Recadrage du dessin détaillé de la maquette -->
+        <figure class="project-art">
+          <svg viewBox="0 695 725 430"
+               role="img"
+               aria-label="Conceptual industrial campus with halls, silos and a water-filled quarry">
+            <image href="images/quaryx-project-assets.png"
+                   width="1347" height="1167"
+                   preserveAspectRatio="none"/>
+          </svg>
+          <figcaption>
+            Conceptual illustration — site layout to be confirmed
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project-benefits">
+
+        <article class="project-benefit">
+          <svg class="detail-icon" viewBox="730 320 165 165"
+               aria-hidden="true">
+            <image href="images/quaryx-project-assets.png"
+                   width="1347" height="1167"
+                   preserveAspectRatio="none"/>
+          </svg>
+          <div>
+            <h3>Industrial infrastructure</h3>
+            <p>Existing buildings with redevelopment potential
+               for digital infrastructure.</p>
+          </div>
+        </article>
+
+        <article class="project-benefit">
+          <svg class="detail-icon" viewBox="730 515 165 165"
+               aria-hidden="true">
+            <image href="images/quaryx-project-assets.png"
+                   width="1347" height="1167"
+                   preserveAspectRatio="none"/>
+          </svg>
+          <div>
+            <h3>Strategic land</h3>
+            <p>Available and secured land to support
+               the project’s phased development.</p>
+          </div>
+        </article>
+
+        <article class="project-benefit">
+          <svg class="detail-icon" viewBox="730 705 165 165"
+               aria-hidden="true">
+            <image href="images/quaryx-project-assets.png"
+                   width="1347" height="1167"
+                   preserveAspectRatio="none"/>
+          </svg>
+          <div>
+            <h3>Energy potential</h3>
+            <p>Access to electricity networks and opportunities
+               for renewable integration, subject to technical validation.</p>
+          </div>
+        </article>
+
+        <article class="project-benefit">
+          <svg class="detail-icon" viewBox="730 895 165 165"
+               aria-hidden="true">
+            <image href="images/quaryx-project-assets.png"
+                   width="1347" height="1167"
+                   preserveAspectRatio="none"/>
+          </svg>
+          <div>
+            <h3>Water resources</h3>
+            <p>Water resources with cooling potential,
+               to be assessed through technical and permitting studies.</p>
+          </div>
+        </article>
+
+        <a class="project-next" href="#data-ai">
+
+  Explore the initial 2 MW phase →
+
+</a>
+
+      </div>
     </div>
-  </article>
+  </section>
 
-</div>
+  <!-- DATA & AI — INITIAL 2 MW PHASE -->
+<section id="data-ai"
+         class="phase-section"
+         aria-labelledby="phase-title">
 
-    </section>
-  </main>
+  <div class="phase-container">
+
+    <header class="phase-heading">
+      <p class="eyebrow">02 / Data &amp; AI</p>
+
+      <h2 id="phase-title">
+        Start focused.<br>
+        <span>Build for what comes next.</span>
+      </h2>
+
+      <p class="phase-introduction">
+        An initial phase designed with the operator,
+        with scope for expansion.
+      </p>
+    </header>
+
+    <!-- CHIFFRES CLÉS -->
+    <div class="phase-metrics">
+
+      <article class="phase-metric">
+        <strong class="phase-value">2 MW</strong>
+        <h3>Initial total site power</h3>
+        <p>
+          Including IT equipment, cooling
+          and ancillary systems.
+        </p>
+      </article>
+
+      <article class="phase-metric">
+        <strong class="phase-value phase-value-green">
+          <span class="phase-up-to">Up to</span> 96%
+        </strong>
+        <h3>Target local energy coverage</h3>
+        <p>
+          Coverage and operating assumptions
+          to be refined.
+        </p>
+      </article>
+
+      <article class="phase-metric">
+        <strong class="phase-value phase-value-blue">
+          PUE &lt; 1.2
+        </strong>
+        <h3>Target energy efficiency</h3>
+        <p>Subject to technical studies.</p>
+      </article>
+
+    </div>
+
+    <!-- EXPLICATIONS ET ILLUSTRATION -->
+    <div class="phase-details">
+
+      <div class="phase-features">
+
+        <article class="phase-feature">
+          <svg class="phase-icon"
+               viewBox="65 605 140 130"
+               aria-hidden="true">
+            <image
+              href="images/quaryx-phase-assets.png"
+              width="1464"
+              height="1074"
+              preserveAspectRatio="none"/>
+          </svg>
+
+          <div>
+            <h3>Power supply</h3>
+            <p>
+              Grid connection, local generation, storage
+              and backup solutions to be defined jointly.
+            </p>
+          </div>
+        </article>
+
+        <article class="phase-feature">
+          <svg class="phase-icon"
+               viewBox="65 755 140 135"
+               aria-hidden="true">
+            <image
+              href="images/quaryx-phase-assets.png"
+              width="1464"
+              height="1074"
+              preserveAspectRatio="none"/>
+          </svg>
+
+          <div>
+            <h3>Cooling approach</h3>
+            <p>
+              Closed-loop cooling, designed around
+              the operator’s requirements.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <figure class="phase-art">
+        <svg viewBox="790 590 650 300"
+             role="img"
+             aria-label="Conceptual cutaway illustration of an industrial hall adapted for data center use">
+          <image
+            href="images/quaryx-phase-assets.png"
+            width="1464"
+            height="1074"
+            preserveAspectRatio="none"/>
+        </svg>
+
+        
+      </figure>
+
+    </div>
+
+    <!-- PARCOURS DE DÉVELOPPEMENT -->
+    <ol class="phase-journey">
+
+      <li>
+        <span class="phase-step-number">01</span>
+        <h3>Co-design</h3>
+        <p>
+          Define the initial phase
+          with the operator.
+        </p>
+      </li>
+
+      <li>
+        <span class="phase-step-number">02</span>
+        <h3>Initial phase</h3>
+        <p>
+          Size infrastructure around
+          the 2 MW starting point.
+        </p>
+      </li>
+
+      <li>
+        <span class="phase-step-number">03</span>
+        <h3>Expansion</h3>
+        <p>
+          Grow in line with demand
+          and secured capacity.
+        </p>
+      </li>
+
+    </ol>
+
+    <p class="phase-footnote">
+      PUE (Power Usage Effectiveness): total data center
+      energy consumption divided by IT equipment energy consumption.
+      Heat recovery is measured separately.
+    </p>
+
+  </div>
+</section>
+
+<!-- ENERGY -->
+<section id="energy"
+         class="energy-section"
+         aria-labelledby="energy-title">
+
+  <div class="energy-container">
+
+    <header class="energy-heading">
+      <p class="eyebrow">03 / Energy</p>
+
+      <h2 id="energy-title">
+        Local energy.<br>
+        <span>Resilience by design.</span>
+      </h2>
+
+      <p class="energy-introduction">
+        Four complementary energy options, coordinated
+        around the site’s needs.
+      </p>
+    </header>
+
+    <div class="energy-grid">
+
+      <!-- SOLAR -->
+      <article class="energy-item">
+        <div class="energy-copy">
+          <span class="energy-number" aria-hidden="true">01</span>
+
+          <h3>Solar</h3>
+
+          <p class="energy-message">
+            Generate power on site.
+          </p>
+
+          <p class="energy-description">
+            Rooftops and suitable areas offer solar potential.
+          </p>
+        </div>
+
+        <svg class="energy-art"
+             viewBox="440 440 275 185"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-energy-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+      </article>
+
+      <!-- WIND -->
+      <article class="energy-item">
+        <div class="energy-copy">
+          <span class="energy-number" aria-hidden="true">02</span>
+
+          <h3>Wind</h3>
+
+          <p class="energy-message">
+            Explore nearby generation.
+          </p>
+
+          <p class="energy-description">
+            Potential direct supply under a power purchase agreement.
+          </p>
+        </div>
+
+        <svg class="energy-art energy-art-wind"
+             viewBox="1180 380 220 245"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-energy-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+      </article>
+
+      <!-- STORAGE -->
+      <article class="energy-item">
+        <div class="energy-copy">
+          <span class="energy-number" aria-hidden="true">03</span>
+
+          <h3>Storage</h3>
+
+          <p class="energy-message">
+            Build flexibility into the system.
+          </p>
+
+          <p class="energy-description">
+            On-site and nearby battery projects;
+            availability to be confirmed.
+          </p>
+        </div>
+
+        <svg class="energy-art"
+             viewBox="440 700 275 180"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-energy-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+      </article>
+
+      <!-- GRID -->
+      <article class="energy-item">
+        <div class="energy-copy">
+          <span class="energy-number" aria-hidden="true">04</span>
+
+          <h3>Grid</h3>
+
+          <p class="energy-message">
+            Connect to the wider network.
+          </p>
+
+          <p class="energy-description">
+            Nearby high-voltage infrastructure;
+            capacity to be validated.
+          </p>
+        </div>
+
+        <svg class="energy-art"
+             viewBox="1135 690 280 190"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-energy-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+      </article>
+
+    </div>
+
+    <aside class="energy-summary"
+           aria-labelledby="energy-summary-title">
+      <h3 id="energy-summary-title">Hybrid microgrid</h3>
+
+      <p>
+        Coordinating generation, storage and grid supply.
+      </p>
+    </aside>
+
+    <p class="energy-note">
+      Indicative energy concept. Subject to technical validation,
+      availability and agreements.
+    </p>
+
+  </div>
+</section>
+
+<!-- WATER & HEAT -->
+<section id="water-heat"
+         class="water-section"
+         aria-labelledby="water-title">
+
+  <div class="water-container">
+
+    <header class="water-heading">
+      <p class="eyebrow">04 / Water &amp; Heat</p>
+
+      <h2 id="water-title">
+        Water cooling.<br>
+        <span>Heat with a purpose.</span>
+      </h2>
+
+      <p class="water-introduction">
+        Exploring water-based cooling and local reuse
+        of recovered heat.
+      </p>
+    </header>
+
+    <div class="water-layout">
+
+      <div class="water-features">
+
+        <!-- CLOSED-LOOP COOLING -->
+        <article class="water-feature">
+
+          <svg class="water-icon"
+               viewBox="55 350 125 125"
+               aria-hidden="true"
+               focusable="false">
+            <image href="images/quaryx-water-assets.png"
+                   width="1465"
+                   height="1074"
+                   preserveAspectRatio="none"/>
+          </svg>
+
+          <div class="water-copy">
+            <p class="water-label">Closed-loop cooling</p>
+
+            <h3>Recirculate cooling water.</h3>
+
+            <p class="water-description">
+              A water-based cooling approach designed
+              around the operator’s requirements.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- LOCAL HEAT REUSE -->
+        <article class="water-feature">
+
+          <svg class="water-icon"
+               viewBox="55 535 125 115"
+               aria-hidden="true"
+               focusable="false">
+            <image href="images/quaryx-water-assets.png"
+                   width="1465"
+                   height="1074"
+                   preserveAspectRatio="none"/>
+          </svg>
+
+          <div class="water-copy">
+            <p class="water-label">Local heat reuse</p>
+
+            <h3>Give recovered heat a second use.</h3>
+
+            <p class="water-description">
+              Potential supply to nearby buildings,
+              industry or greenhouses.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- INDUSTRIAL REDEVELOPMENT -->
+        <article class="water-feature">
+
+          <svg class="water-icon"
+               viewBox="55 720 125 115"
+               aria-hidden="true"
+               focusable="false">
+            <image href="images/quaryx-water-assets.png"
+                   width="1465"
+                   height="1074"
+                   preserveAspectRatio="none"/>
+          </svg>
+
+          <div class="water-copy">
+            <p class="water-label">Industrial redevelopment</p>
+
+            <h3>Build on an existing site.</h3>
+
+            <p class="water-description">
+              Explore shared water and heat infrastructure
+              within the industrial environment.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- LAKE AND INDUSTRIAL BUILDING -->
+      <figure class="water-illustration">
+
+        <svg viewBox="870 250 595 510"
+             role="img"
+             aria-labelledby="water-art-title">
+          <title id="water-art-title">
+            Conceptual illustration of an industrial building
+            beside a quarry lake, with cooling equipment and
+            potential heat reuse.
+          </title>
+
+          <image href="images/quaryx-water-assets.png"
+                 width="1465"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+
+        <figcaption>Conceptual illustration</figcaption>
+
+      </figure>
+
+    </div>
+
+    <!-- SUSTAINABILITY AMBITION -->
+    <aside class="water-ambition"
+           aria-labelledby="water-ambition-title">
+
+      <div class="water-ambition-copy">
+        <h3 id="water-ambition-title">
+          European sustainability ambition
+        </h3>
+
+        <p>
+          Designed to support alignment with
+          European sustainability standards.
+        </p>
+      </div>
+
+      <div class="water-efficiency">
+        <p class="water-pue">
+          PUE <span>&lt; 1.2</span>
+        </p>
+
+        <p class="water-efficiency-label">
+          Target energy efficiency
+        </p>
+
+        <p class="water-efficiency-note">
+          Subject to technical studies.
+        </p>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+<!-- STRATEGIC LAND -->
+<section id="strategic-land"
+         class="land-section"
+         aria-labelledby="land-title">
+
+  <div class="land-container">
+
+    <header class="land-heading">
+      <p class="eyebrow">05 / Strategic land</p>
+
+      <h2 id="land-title">
+        Start with what exists.<br>
+        <span>Make room for what comes next.</span>
+      </h2>
+
+      <p class="land-introduction">
+        A phased approach to industrial redevelopment,
+        shaped around the operator’s needs.
+      </p>
+    </header>
+
+    <ol class="land-stages">
+
+      <!-- STAGE 1 -->
+      <li class="land-stage">
+
+        <div class="land-stage-marker" aria-hidden="true">
+          <span>01</span>
+        </div>
+
+        <h3>Start on site.</h3>
+
+        <p class="land-stage-label">
+          Existing building
+        </p>
+
+        <p class="land-description">
+          An existing industrial building to accommodate
+          an initial phase.
+        </p>
+
+        <p class="land-detail">
+          Tier III or Tier IV design to be defined.
+        </p>
+
+        <svg class="land-art"
+             viewBox="20 575 480 295"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-land-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+
+      </li>
+
+      <!-- STAGE 2 -->
+      <li class="land-stage">
+
+        <div class="land-stage-marker" aria-hidden="true">
+          <span>02</span>
+        </div>
+
+        <h3>Expand in phases.</h3>
+
+        <p class="land-stage-label">
+          Land available in stages
+        </p>
+
+        <p class="land-description">
+          Land available in phases, with one third
+          ready for immediate development.
+        </p>
+
+        <p class="land-detail">
+          Plan the next stage around operational needs.
+        </p>
+
+        <svg class="land-art"
+             viewBox="510 575 440 295"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-land-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+
+      </li>
+
+      <!-- STAGE 3 -->
+      <li class="land-stage">
+
+        <div class="land-stage-marker" aria-hidden="true">
+          <span>03</span>
+        </div>
+
+        <h3>Plan for scale.</h3>
+
+        <p class="land-stage-label">
+          Longer-term potential
+        </p>
+
+        <p class="land-description">
+          A wider industrial site spanning
+          several hectares.
+        </p>
+
+        <p class="land-detail">
+          Explore spatial redundancy and future capacity.
+        </p>
+
+        <svg class="land-art"
+             viewBox="960 575 490 295"
+             aria-hidden="true"
+             focusable="false">
+          <image href="images/quaryx-land-assets.png"
+                 width="1464"
+                 height="1074"
+                 preserveAspectRatio="none"/>
+        </svg>
+
+      </li>
+
+    </ol>
+
+    <p class="land-caption">Conceptual illustrations</p>
+
+    <aside class="land-summary"
+           aria-labelledby="land-summary-title">
+
+      <h3 id="land-summary-title">
+        Industrial redevelopment
+      </h3>
+
+      <p>
+        Reuse existing industrial land.
+        <span>Limit new land take.</span>
+      </p>
+
+    </aside>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact"
+         class="contact-section"
+         aria-labelledby="contact-title">
+
+  <!-- Decorative circuits: top right -->
+  <svg class="contact-top-circuit"
+       viewBox="0 0 430 210"
+       fill="none"
+       aria-hidden="true"
+       focusable="false">
+    <g stroke="#075477" stroke-width="1.2">
+      <path d="M430 20H320L285 55H230L170 115H35"/>
+      <path d="M430 90H300L235 155H175"/>
+      <path d="M430 140H315L260 195H135"/>
+      <path d="M100 85H160"/>
+    </g>
+
+    <path d="M430 70H265L230 105H15"
+          stroke="#078747"
+          stroke-width="1.2"/>
+
+    <g fill="#078747">
+      <circle cx="15" cy="105" r="4"/>
+      <circle cx="265" cy="70" r="4"/>
+    </g>
+
+    <g fill="#ffffff" stroke-width="1.5">
+      <circle cx="160" cy="85" r="4" stroke="#078747"/>
+      <circle cx="175" cy="155" r="4" stroke="#075477"/>
+      <circle cx="135" cy="195" r="4" stroke="#075477"/>
+    </g>
+  </svg>
+
+  <!-- Original QUARYX symbol -->
+  <img class="contact-watermark"
+       src="images/quaryx-symbol.jpg"
+       alt=""
+       aria-hidden="true">
+
+  <div class="contact-container">
+
+    <header class="contact-heading">
+      <p class="eyebrow">06 / Contact</p>
+
+      <h2 id="contact-title">
+        Let’s discuss<br>
+        <span>your next project.</span>
+      </h2>
+
+      <p class="contact-introduction">
+        Looking for a site for your next Data &amp; AI project?
+        Get in touch to discuss your requirements and
+        explore a potential partnership.
+      </p>
+    </header>
+
+    <div class="contact-layout">
+
+      <!-- Email contact card -->
+      <div class="contact-card">
+        <p class="contact-card-label">Get in touch</p>
+
+        <a class="contact-email"
+           href="mailto:info@quaryx.eu">
+          info@quaryx.eu
+        </a>
+
+        <a class="contact-button"
+           href="mailto:info@quaryx.eu?subject=QUARYX%20Project%20Enquiry">
+          <span>Contact QUARYX</span>
+
+          <svg viewBox="0 0 28 20"
+               fill="none"
+               aria-hidden="true"
+               focusable="false">
+            <path d="M1 10H26M18 2L26 10L18 18"
+                  stroke="currentColor"
+                  stroke-width="1.5"/>
+          </svg>
+        </a>
+
+        <svg class="contact-card-circuit"
+             viewBox="0 0 300 75"
+             fill="none"
+             aria-hidden="true"
+             focusable="false">
+          <path d="M0 12H95L125 42H245"
+                stroke="#078747"
+                stroke-width="1.2"/>
+
+          <path d="M0 42H78L105 68H180"
+                stroke="#075477"
+                stroke-width="1.2"/>
+
+          <circle cx="125"
+                  cy="42"
+                  r="4"
+                  fill="#078747"/>
+
+          <circle cx="245"
+                  cy="42"
+                  r="4"
+                  fill="#ffffff"
+                  stroke="#078747"
+                  stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <!-- Contact process -->
+      <ol class="contact-steps">
+
+        <li class="contact-step">
+          <span class="contact-step-number"
+                aria-hidden="true">01</span>
+
+          <svg class="contact-step-icon"
+               viewBox="0 0 64 64"
+               fill="none"
+               aria-hidden="true"
+               focusable="false">
+            <path d="M10 12H43A5 5 0 0 1 48 17V36
+                     A5 5 0 0 1 43 41H25L15 50V41H10
+                     A5 5 0 0 1 5 36V17A5 5 0 0 1 10 12Z"/>
+            <path d="M48 25H54A5 5 0 0 1 59 30V48
+                     A5 5 0 0 1 54 53H50V60L41 53H31"/>
+            <circle cx="18" cy="27" r="1.5"/>
+            <circle cx="27" cy="27" r="1.5"/>
+            <circle cx="36" cy="27" r="1.5"/>
+          </svg>
+
+          <div>
+            <h3>Initial discussion</h3>
+
+            <p>
+              Share your capacity needs, operating requirements
+              and development objectives.
+            </p>
+          </div>
+        </li>
+
+        <li class="contact-step">
+          <span class="contact-step-number"
+                aria-hidden="true">02</span>
+
+          <svg class="contact-step-icon"
+               viewBox="0 0 64 64"
+               fill="none"
+               aria-hidden="true"
+               focusable="false">
+            <path d="M14 5H37L49 17V56H14Z"/>
+            <path d="M37 5V17H49"/>
+            <path d="M22 26H41M22 35H41M22 44H34"/>
+          </svg>
+
+          <div>
+            <h3>Mutual NDA</h3>
+
+            <p>
+              Detailed site information and data room access
+              are shared by invitation, following
+              <strong>
+                execution of a mutual non-disclosure agreement.
+              </strong>
+            </p>
+          </div>
+        </li>
+
+      </ol>
+
+    </div>
+
+    <footer class="contact-footer">
+      <p class="contact-signature">
+        Where Industrial Heritage Powers a
+        <span>Greener</span> Digital Future.
+      </p>
+
+      <small class="contact-copyright">© QUARYX</small>
+    </footer>
+
+  </div>
+</section>
+
+</main>
+
+<script>
+(() => {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".project-benefit").forEach((item) => {
+    item.classList.add("reveal");
+    observer.observe(item);
+  });
+})();
+</script>
 </body>
 </html>
