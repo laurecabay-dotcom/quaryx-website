@@ -2,6 +2,8 @@
   --navy: #071b49;
   --blue: #075477;
   --green: #078747;
+  --yellow: #eee327;
+  --font: "Avenir Next", Avenir, "Century Gothic", Arial, sans-serif;
 }
 
 * {
@@ -15,18 +17,19 @@ html {
 body {
   margin: 0;
   color: var(--navy);
-  background: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fa;
+  font-family: var(--font);
 }
+
+/* Première section */
 
 .hero {
   position: relative;
   isolation: isolate;
   min-height: 100svh;
-  padding: 26px 3.5% 18px;
+  padding: 24px 3.5% 14px;
   display: flex;
   flex-direction: column;
-  background: #edf3f6;
 }
 
 .hero::before {
@@ -34,19 +37,34 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("images/quaryx-hero.png") center / cover no-repeat;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(247, 249, 251, 0.97) 0%,
+      rgba(247, 249, 251, 0.88) 25%,
+      rgba(247, 249, 251, 0.48) 36%,
+      rgba(247, 249, 251, 0) 48%
+    ),
+    url("images/quaryx-hero.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* Logo et navigation */
 
 .header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 32px;
+  gap: 28px;
 }
 
 .brand {
   display: block;
-  width: clamp(240px, 30vw, 430px);
+  width: clamp(240px, 29vw, 420px);
   flex-shrink: 0;
 }
 
@@ -65,12 +83,13 @@ nav {
 }
 
 nav a {
+  padding: 0 18px;
   color: var(--navy);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.055em;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 20px;
 }
 
 nav a + a {
@@ -90,22 +109,24 @@ a:focus-visible {
   outline-offset: 6px;
 }
 
+/* Grand titre */
+
 .hero-content {
-  width: min(650px, 58%);
-  margin-top: clamp(32px, 5vh, 70px);
-  margin-bottom: 42px;
+  width: min(680px, 60%);
+  margin-top: clamp(28px, 4vh, 65px);
+  margin-bottom: 40px;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(32px, 4.6vw, 76px);
-  font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -0.045em;
+  font-size: clamp(28px, 3.9vw, 66px);
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  line-height: 1.16;
   text-transform: uppercase;
 }
 
-h1 span {
+h1 > span {
   display: block;
 }
 
@@ -116,40 +137,60 @@ h1 span {
 .gradient {
   width: fit-content;
   color: var(--green);
-  background: linear-gradient(100deg, #075477, #078747);
+  background: linear-gradient(100deg, var(--blue), var(--green));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Ligne graphique */
+
 .circuit {
   display: block;
   width: min(430px, 90%);
   height: auto;
-  margin: 12px 0 18px;
+  margin: 14px 0 18px;
 }
 
+/* Description : largeur limitée pour rester lisible */
+
 .intro {
+  max-width: 430px;
   margin: 0;
-  font-size: clamp(18px, 1.7vw, 26px);
+  font-size: clamp(18px, 1.65vw, 25px);
+  font-weight: 500;
   line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.intro-description,
+.intro-area {
+  display: block;
+}
+
+.intro-area {
+  margin-top: 3px;
 }
 
 .intro strong {
   color: #08667b;
   font-size: 1.35em;
+  font-weight: 700;
   white-space: nowrap;
 }
+
+/* Cartouche de localisation */
 
 .location {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  margin-top: 26px;
+  max-width: 100%;
+  margin-top: 25px;
   padding: 15px 24px 15px 16px;
   border: 1px solid #e1e6e9;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 3px 12px #071b4914;
 }
 
@@ -165,7 +206,7 @@ h1 span {
 
 .location-icon svg {
   width: 29px;
-  stroke: white;
+  stroke: #fff;
   stroke-width: 1.5;
 }
 
@@ -175,76 +216,97 @@ h1 span {
 }
 
 .location strong {
-  margin-bottom: 5px;
-  font-size: 20px;
+  margin-bottom: 4px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
 }
 
 .location div > span {
-  font-size: 15px;
+  font-size: 14px;
 }
+
+/* Bandeau inférieur */
 
 .pillars {
   display: grid;
-  grid-template-columns: 1fr 1.15fr 1fr;
+  grid-template-columns: 1fr 1.15fr 0.95fr;
   margin-top: auto;
-  padding: 25px 20px;
-  border: 1px solid #14778c;
-  border-radius: 44px;
+  padding: 22px 18px;
+  border: 1px solid rgba(34, 154, 173, 0.65);
+  border-radius: 46px 70px 70px 46px;
+
   background: linear-gradient(
-    105deg,
-    #052c50 0%,
-    #03374c 65%,
-    #376d37 100%
+    100deg,
+    #032f52 0%,
+    #02374c 64%,
+    #176548 88%,
+    #658528 100%
   );
-  color: white;
+
+  color: #fff;
 }
 
 .pillars article {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 0 24px;
+  gap: 22px;
+  min-width: 0;
+  padding: 0 25px;
   scroll-margin-top: 24px;
 }
 
 .pillars article + article {
-  border-left: 1px solid #ffffff40;
+  border-left: 1px solid rgba(65, 173, 191, 0.65);
 }
 
-.pillar-number {
-  color: #d8df47;
-  font-size: 30px;
-  font-weight: 400;
+.pillar-icon {
+  width: 58px;
+  height: 72px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: #e4dd23;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pillar-icon-ai {
+  stroke: #24b8ce;
+}
+
+.pillar-icon-ai g {
+  stroke: #e4dd23;
 }
 
 .pillars h2 {
-  margin: 0 0 6px;
-  font-size: 16px;
+  margin: 0 0 4px;
+  font-size: clamp(13px, 1.15vw, 18px);
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.45;
   text-transform: uppercase;
 }
 
 .pillars p {
   margin: 0;
-  color: #e1e755;
-  font-size: 15px;
-  line-height: 1.4;
+  color: var(--yellow);
+  font-size: clamp(13px, 1.1vw, 17px);
+  line-height: 1.45;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .image-note {
-  margin: 10px 8px 0;
-  text-align: right;
-  font-size: 11px;
+  margin: 8px 8px 0;
   color: var(--navy);
+  font-size: 10px;
+  text-align: right;
 }
 
-@media (min-width: 1600px) {
-  .hero-content {
-    margin-top: 7vh;
-  }
-}
+/* Tablettes */
 
 @media (max-width: 900px) {
   .header {
@@ -253,8 +315,8 @@ h1 span {
   }
 
   nav {
-    margin-top: 0;
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   nav a:first-child {
@@ -262,26 +324,21 @@ h1 span {
   }
 
   .hero-content {
-    width: 75%;
+    width: 80%;
   }
 
   .pillars article {
-    padding: 0 14px;
-    gap: 10px;
+    gap: 12px;
+    padding: 0 12px;
   }
 
-  .pillars h2 {
-    font-size: 13px;
-  }
-
-  .pillars p {
-    font-size: 13px;
-  }
-
-  .pillar-number {
-    font-size: 23px;
+  .pillar-icon {
+    width: 40px;
+    height: 54px;
   }
 }
+
+/* Téléphones */
 
 @media (max-width: 600px) {
   .hero {
@@ -289,6 +346,7 @@ h1 span {
   }
 
   .hero::before {
+    background-image: url("images/quaryx-hero.png");
     background-size: auto 560px;
     background-position: 63% 240px;
     background-color: #f4f7fa;
@@ -314,32 +372,34 @@ h1 span {
   }
 
   nav {
-    gap: 0;
     margin-top: 8px;
   }
 
   nav a {
     padding: 0 10px;
     font-size: 10px;
+    letter-spacing: 0.025em;
   }
 
   .hero-content {
     width: 100%;
-    margin-top: 38px;
+    margin-top: 34px;
     margin-bottom: 190px;
   }
 
   h1 {
-    font-size: clamp(29px, 7.8vw, 47px);
+    font-size: clamp(23px, 6.6vw, 39px);
+    letter-spacing: 0.02em;
   }
 
   .intro {
+    max-width: 340px;
     font-size: 17px;
   }
 
   .location {
-    padding: 12px;
     gap: 12px;
+    padding: 12px;
     border-radius: 18px;
   }
 
@@ -353,18 +413,23 @@ h1 span {
 
   .pillars {
     grid-template-columns: 1fr;
-    padding: 12px 20px;
-    border-radius: 26px;
+    padding: 10px 22px;
+    border-radius: 28px;
   }
 
   .pillars article {
-    padding: 16px 0;
-    gap: 18px;
+    gap: 20px;
+    padding: 18px 0;
   }
 
   .pillars article + article {
     border-left: 0;
-    border-top: 1px solid #ffffff40;
+    border-top: 1px solid rgba(65, 173, 191, 0.5);
+  }
+
+  .pillar-icon {
+    width: 45px;
+    height: 58px;
   }
 
   .pillars h2,
@@ -378,34 +443,31 @@ h1 span {
     scroll-behavior: auto;
   }
 }
-/* Typographie harmonisée avec le logo QUARYX */
-body {
-  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+.pillars .pillar-icon {
+  width: 62px;
+  height: 72px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: #eee327;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-h1 {
-  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
-  font-weight: 600;
-  font-size: clamp(28px, 3.9vw, 66px);
-  letter-spacing: 0.035em;
-  line-height: 1.16;
+.pillars .pillar-icon-ai > g {
+  stroke: url(#ai-icon-color);
 }
 
-nav a,
-.location strong,
-.pillars h2 {
-  font-weight: 600;
-  letter-spacing: 0.055em;
-}
-
-.intro,
-.pillars p {
-  font-weight: 400;
+@media (max-width: 900px) {
+  .pillars .pillar-icon {
+    width: 44px;
+    height: 56px;
+  }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: clamp(23px, 6.6vw, 39px);
-    letter-spacing: 0.02em;
+  .pillars .pillar-icon {
+    width: 48px;
+    height: 60px;
   }
 }

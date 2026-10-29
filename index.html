@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QUARYX — Infrastructure, Data & AI</title>
+
+  <title>QUARYX — Infrastructure, Data &amp; AI</title>
   <meta name="description"
         content="A strategic industrial redevelopment opportunity in Wallonia, Belgium.">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
     <section class="hero" aria-labelledby="hero-title">
+
       <header class="header">
         <a class="brand" href="./" aria-label="QUARYX home">
-          <img src="images/quaryx-logo.png"
-               alt="QUARYX — Where Industrial Heritage Powers a Greener Digital Future.">
+          <img
+            src="images/quaryx-logo.png"
+            alt="QUARYX — Where Industrial Heritage Powers a Greener Digital Future."
+          >
         </a>
 
         <nav aria-label="Project pillars">
@@ -32,8 +37,12 @@
           <span class="gradient">Next-gen</span>
         </h1>
 
-        <svg class="circuit" viewBox="0 0 440 28"
-             fill="none" aria-hidden="true">
+        <svg
+          class="circuit"
+          viewBox="0 0 440 28"
+          fill="none"
+          aria-hidden="true"
+        >
           <defs>
             <linearGradient id="line-color">
               <stop stop-color="#071d49"/>
@@ -41,9 +50,13 @@
               <stop offset="1" stop-color="#729e31"/>
             </linearGradient>
           </defs>
-          <path d="M2 12H180L190 22H230M180 12H225L235 7H435"
-                stroke="url(#line-color)"
-                stroke-width="2.5"/>
+
+          <path
+            d="M2 12H180L190 22H230M180 12H225L235 7H435"
+            stroke="url(#line-color)"
+            stroke-width="2.5"
+          />
+
           <g fill="#078368">
             <circle cx="230" cy="22" r="3.5"/>
             <circle cx="290" cy="7" r="3.5"/>
@@ -52,17 +65,24 @@
         </svg>
 
         <p class="intro">
-          Strategic redevelopment of an industrial site<br>
-          of <strong>±100,000 m²</strong>
+          <span class="intro-description">
+            Strategic redevelopment of an industrial site
+          </span>
+          <span class="intro-area">
+            of <strong>±100,000 m²</strong>
+          </span>
         </p>
 
         <div class="location">
           <span class="location-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
-              <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/>
+              <path
+                d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"
+              />
               <circle cx="12" cy="10" r="2.5"/>
             </svg>
           </span>
+
           <div>
             <strong>Wallonia, Belgium</strong>
             <span>France / Benelux border region</span>
@@ -71,32 +91,102 @@
       </div>
 
       <div class="pillars">
-        <article id="connectivity">
-          <span class="pillar-number">01</span>
-          <div>
-            <h2>Energy potential</h2>
-            <p>A platform suited to tomorrow’s infrastructure</p>
-          </div>
-        </article>
 
-        <article id="opportunity">
-          <span class="pillar-number">02</span>
-          <div>
-            <h2>Strategic industrial redevelopment opportunity</h2>
-            <p>In a border region</p>
-          </div>
-        </article>
+  <!-- Énergie : éclair -->
+  <article id="connectivity">
+    <svg class="pillar-icon"
+         viewBox="0 0 80 80"
+         aria-hidden="true">
+      <path d="M48 4 15 43h22L25 76 64 35H42Z"/>
+    </svg>
 
-        <article id="durability">
-          <span class="pillar-number">03</span>
-          <div>
-            <h2>Data &amp; AI infrastructure</h2>
-            <p>For tomorrow</p>
-          </div>
-        </article>
-      </div>
+    <div>
+      <h2>Energy potential</h2>
+      <p>A platform suited to tomorrow’s infrastructure</p>
+    </div>
+  </article>
 
-      <p class="image-note">Conceptual illustration</p>
+  <!-- Reconversion : feuille -->
+  <article id="opportunity">
+    <svg class="pillar-icon"
+         viewBox="0 0 80 80"
+         aria-hidden="true">
+      <path d="
+        M22 62
+        C5 49 12 25 31 16
+        C43 10 58 9 69 8
+        C64 20 68 39 57 54
+        C49 66 34 69 22 62Z
+      "/>
+      <path d="
+        M10 75 56 23
+        M27 56 25 38
+        M36 46 53 46
+        M43 38 43 24
+        M21 63 39 63
+      "/>
+    </svg>
+
+    <div>
+      <h2>Strategic industrial redevelopment opportunity</h2>
+      <p class="uppercase">In a border region</p>
+    </div>
+  </article>
+
+  <!-- Data et IA : circuit -->
+  <article id="durability">
+    <svg class="pillar-icon pillar-icon-ai"
+         viewBox="0 0 80 80"
+         aria-hidden="true">
+
+      <defs>
+        <linearGradient id="ai-icon-color"
+                        x1="0" y1="1" x2="1" y2="0">
+          <stop stop-color="#19bddd"/>
+          <stop offset=".5" stop-color="#19bddd"/>
+          <stop offset="1" stop-color="#eee327"/>
+        </linearGradient>
+      </defs>
+
+      <g stroke="url(#ai-icon-color)">
+        <circle cx="40" cy="40" r="34"/>
+
+        <rect x="25" y="26"
+              width="30" height="28" rx="2"/>
+
+        <path d="
+          M30 47 36 33 42 47
+          M32 42h8
+          M48 33v14
+          M32 26V16H24
+          M47 26V12
+          M55 34h9V24
+          M55 46h12
+          M47 54v11h9
+          M33 54v15
+          M25 46H13
+          M25 34H15V25
+        "/>
+
+        <circle cx="22" cy="16" r="2.8"/>
+        <circle cx="47" cy="10" r="2.8"/>
+        <circle cx="64" cy="22" r="2.8"/>
+        <circle cx="69" cy="46" r="2.8"/>
+        <circle cx="58" cy="65" r="2.8"/>
+        <circle cx="33" cy="71" r="2.8"/>
+        <circle cx="11" cy="46" r="2.8"/>
+        <circle cx="15" cy="23" r="2.8"/>
+      </g>
+    </svg>
+
+    <div>
+      <h2>Data &amp; AI infrastructure</h2>
+      <p class="uppercase">For tomorrow</p>
+    </div>
+  </article>
+
+</div>
+
     </section>
   </main>
 </body>
