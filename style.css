@@ -2288,3 +2288,12 @@ a.project-next:hover {
   outline: 2px solid #078747;
   outline-offset: 5px;
 }
+/* Soft blue transition — The Project */
+#project {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 55%,
+    #f2f8fa 100%
+  );
+}
