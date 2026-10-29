@@ -9,6 +9,27 @@
         content="An industrial redevelopment opportunity in Wallonia, Belgium, for next-generation Data & AI infrastructure.">
 
   <link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://quaryx.eu/">
+<link rel="alternate" hreflang="en" href="https://quaryx.eu/">
+<link rel="alternate" hreflang="fr" href="https://quaryx.eu/fr.html">
+<link rel="alternate" hreflang="x-default" href="https://quaryx.eu/">
+
+<style>
+.header-navigation{display:flex;flex-direction:column;align-items:flex-end;gap:10px;min-width:0;max-width:100%;}
+.language-switch{display:flex;align-items:center;gap:10px;font:500 12px/1.5 "Avenir Next",Avenir,Arial,sans-serif;letter-spacing:.06em;}
+.language-switch a{color:#071b49;text-decoration:none;padding:4px 6px;}
+.language-switch a[aria-current="page"]{color:#078747;border-bottom:1px solid #078747;}
+.language-switch a:focus-visible{outline:2px solid #078747;outline-offset:3px;}
+html[lang="fr"] .intro-description{white-space:normal;}
+html[lang="fr"] #hero-title{font-size:clamp(26px,4.1vw,66px);overflow-wrap:normal;}
+html[lang="fr"] .phase-value{font-size:clamp(30px,4.3vw,68px);}
+html[lang="fr"] .header nav a{letter-spacing:.025em;}
+.contact-card .contact-resources{display:flex!important;flex-direction:column!important;align-items:flex-start;gap:12px;margin-top:24px;position:relative;z-index:1;}
+.contact-card .contact-resources>a{display:block!important;width:fit-content;padding:4px 0;color:#071b49;font-family:inherit;font-size:14px;line-height:1.5;text-decoration:underline;text-underline-offset:5px;}
+.contact-card .contact-resources>a::before,.contact-card .contact-resources>a::after{content:none!important;}
+.contact-card .contact-resources>a:hover{color:#078747;}
+@media(max-width:700px){.header-navigation{width:100%;}.language-switch{align-self:flex-end;}html[lang="fr"] #hero-title{font-size:clamp(25px,6.5vw,44px);}}
+</style>
 </head>
 
 <body>
@@ -23,15 +44,19 @@
              alt="QUARYX — Where Industrial Heritage Powers a Greener Digital Future.">
       </a>
 
+      <div class="header-navigation">
       <nav aria-label="Main navigation">
         <a href="#project">The Project</a>
         <a href="#data-ai">Data &amp; AI</a>
         <a href="#energy">Energy</a>
         <a href="#water-heat">Water &amp; Heat</a>
         <a href="#strategic-land">Land &amp; Phasing</a>
-        <a href="#location">Location</a>
+     <a href="#strategic-land">Location</a>
         <a href="#contact">Contact</a>
       </nav>
+<div class="language-switch" role="group" aria-label="Choose language">
+<a href="index.html" lang="en" hreflang="en" aria-current="page">EN</a><span aria-hidden="true">|</span><a href="fr.html" lang="fr" hreflang="fr">FR</a></div>
+</div>
     </header>
 
     <div class="hero-content">
@@ -87,7 +112,7 @@
         </div>
       </div>
 
-      <div class="location">
+      <div class="location" id="location">
         <span class="location-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/>
@@ -954,12 +979,12 @@
   <a href="documents/quaryx-project-overview.pdf"
      target="_blank"
      rel="noopener">
-    View Project Overview <span aria-hidden="true">↓</span>
+    View Project Overview 
   </a>
 
   <a href="quaryx-contact.vcf"
      download="Laure-Cabay-QUARYX.vcf">
-    Save Contact <span aria-hidden="true">↓</span>
+    Save Contact 
   </a>
 </div>
         <svg class="contact-card-circuit"
