@@ -2223,3 +2223,34 @@ a.project-next:hover {
     transition: none;
   }
 }
+.contact-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  margin-top: 24px;
+}
+
+.contact-resources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  color: var(--contact-navy);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-color: #b6ccd6;
+  text-underline-offset: 5px;
+}
+
+.contact-resources a:hover {
+  color: var(--contact-green);
+  text-decoration-color: currentColor;
+}
+
+.contact-resources a:focus-visible {
+  outline: 2px solid var(--contact-green);
+  outline-offset: 5px;
+}
