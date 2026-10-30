@@ -29,6 +29,99 @@ html[lang="fr"] .header nav a{letter-spacing:.025em;}
 .contact-card .contact-resources>a::before,.contact-card .contact-resources>a::after{content:none!important;}
 .contact-card .contact-resources>a:hover{color:#078747;}
 @media(max-width:700px){.header-navigation{width:100%;}.language-switch{align-self:flex-end;}html[lang="fr"] #hero-title{font-size:clamp(25px,6.5vw,44px);}}
+
+/* Menu ajusté au contenu, aligné à droite */
+.header .header-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.header .header-navigation > nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-self: flex-end;
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header .header-navigation > nav > a {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Contact à gauche des langues */
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: auto;
+  max-width: 100%;
+}
+
+.header .header-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: max-content;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 12px 22px;
+  border: 1px solid #078747;
+  border-radius: 999px;
+  background: #078747;
+  color: #ffffff;
+  font-family: "Avenir Next", Avenir, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .035em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header .header-contact:hover {
+  background: #066d3a;
+  border-color: #066d3a;
+}
+
+.header .header-contact:focus-visible {
+  outline: 2px solid #071b49;
+  outline-offset: 4px;
+}
+
+.header .header-actions .language-switch {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+/* Téléphones et tablettes */
+@media (max-width: 1100px) {
+  .hero .header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .header .brand {
+    align-self: flex-start;
+  }
+
+  .header .header-navigation {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
@@ -38,25 +131,35 @@ html[lang="fr"] .header nav a{letter-spacing:.025em;}
   <!-- ACCUEIL -->
   <section class="hero" id="home" aria-labelledby="hero-title">
 
-    <header class="header">
-      <a class="brand" href="#home" aria-label="Accueil QUARYX">
-        <img src="images/quaryx-logo.png"
-             alt="QUARYX — L’héritage industriel au service d’un avenir numérique plus durable.">
-      </a>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Accueil QUARYX">
+    <img src="images/quaryx-logo.png"
+         alt="QUARYX — L’héritage industriel au service d’un avenir numérique plus durable.">
+  </a>
 
-      <div class="header-navigation">
-      <nav aria-label="Navigation principale">
-        <a href="#project">Le projet</a>
-        <a href="#data-ai">Données et IA</a>
-        <a href="#energy">Énergie</a>
-        <a href="#water-heat">Eau et chaleur</a>
-        <a href="#strategic-land">Foncier et phases</a>
-        <a href="#contact">Contact</a>
-      </nav>
-<div class="language-switch" role="group" aria-label="Choisir la langue">
-<a href="index.html" lang="en" hreflang="en">EN</a><span aria-hidden="true">|</span><a href="fr.html" lang="fr" hreflang="fr" aria-current="page">FR</a></div>
-</div>
-    </header>
+  <div class="header-navigation">
+    <nav aria-label="Navigation principale">
+      <a href="#project">Le projet</a>
+      <a href="#data-ai">Données et IA</a>
+      <a href="#energy">Énergie</a>
+      <a href="#water-heat">Eau et chaleur</a>
+      <a href="#strategic-land">Foncier et phases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-contact" href="#contact">Contact</a>
+
+      <div class="language-switch"
+           role="group"
+           aria-label="Choisir la langue">
+        <a href="index.html" lang="en" hreflang="en">EN</a>
+        <span aria-hidden="true">|</span>
+        <a href="fr.html" lang="fr" hreflang="fr"
+           aria-current="page">FR</a>
+      </div>
+    </div>
+  </div>
+</header>
 
     <div class="hero-content">
       <h1 id="hero-title">
