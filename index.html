@@ -29,6 +29,164 @@ html[lang="fr"] .header nav a{letter-spacing:.025em;}
 .contact-card .contact-resources>a::before,.contact-card .contact-resources>a::after{content:none!important;}
 .contact-card .contact-resources>a:hover{color:#078747;}
 @media(max-width:700px){.header-navigation{width:100%;}.language-switch{align-self:flex-end;}html[lang="fr"] #hero-title{font-size:clamp(25px,6.5vw,44px);}}
+
+/* Menu et bouton Contact */
+.header .header-navigation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px 16px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.header .header-navigation > nav {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.header .header-actions {
+  display: contents;
+}
+
+.header .header-contact {
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 12px 22px;
+  border: 1px solid #078747;
+  border-radius: 999px;
+  background: #078747;
+  color: #ffffff;
+  font-family: "Avenir Next", Avenir, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .035em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header .header-contact:hover {
+  background: #066d3a;
+  border-color: #066d3a;
+}
+
+.header .header-contact:focus-visible {
+  outline: 2px solid #071b49;
+  outline-offset: 4px;
+}
+
+.header .header-actions .language-switch {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: end;
+}
+
+/* Téléphones et tablettes */
+@media (max-width: 1100px) {
+  .hero .header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .header .brand {
+    align-self: flex-start;
+  }
+
+  .header .header-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .header .header-navigation > nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header .header-navigation > nav > a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .header .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .header .header-actions .language-switch {
+    align-self: auto;
+    flex-shrink: 0;
+  }
+}
+/* Bulles ajustées à leur contenu */
+.header .header-navigation > nav {
+  width: max-content;
+  max-width: 100%;
+  justify-self: start;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+.header .header-contact {
+  width: max-content;
+  justify-self: start;
+  flex: 0 0 auto;
+}
+
+/* Conserver le défilement du menu sur petit écran */
+@media (max-width: 1100px) {
+  .header .header-navigation > nav {
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Contact et langues réunis à droite sous le menu */
+.header .header-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.header .header-navigation > nav {
+  align-self: flex-end;
+}
+
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: auto;
+  max-width: 100%;
+}
+
+.header .header-actions .language-switch {
+  align-self: center;
+}
+
 </style>
 </head>
 
@@ -45,16 +203,36 @@ html[lang="fr"] .header nav a{letter-spacing:.025em;}
       </a>
 
       <div class="header-navigation">
-      <nav aria-label="Main navigation">
-        <a href="#project">The Project</a>
-        <a href="#data-ai">Data &amp; AI</a>
-        <a href="#energy">Energy</a>
-        <a href="#water-heat">Water &amp; Heat</a>
-        <a href="#strategic-land">Land &amp; Phasing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-<div class="language-switch" role="group" aria-label="Choose language">
-<a href="index.html" lang="en" hreflang="en" aria-current="page">EN</a><span aria-hidden="true">|</span><a href="fr.html" lang="fr" hreflang="fr">FR</a></div>
+
+  <nav aria-label="Main navigation">
+    <a href="#project">The Project</a>
+    <a href="#data-ai">Data &amp; AI</a>
+    <a href="#energy">Energy</a>
+    <a href="#water-heat">Water &amp; Heat</a>
+    <a href="#strategic-land">Land &amp; Phasing</a>
+  </nav>
+
+  <div class="header-actions">
+    <a class="header-contact" href="#contact">
+      Contact
+    </a>
+
+    <div class="language-switch"
+         role="group"
+         aria-label="Choose language">
+      <a href="index.html"
+         lang="en"
+         hreflang="en"
+         aria-current="page">EN</a>
+
+      <span aria-hidden="true">|</span>
+
+      <a href="fr.html"
+         lang="fr"
+         hreflang="fr">FR</a>
+    </div>
+  </div>
+
 </div>
     </header>
 
